@@ -1,0 +1,223 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --index: calc(1vw + 1vh);
+  --transition: 1.5s cubic-bezier(0.05, 0.5, 0, 1);
+  --logo-size: calc(var(--index) * 8);
+}
+
+body {
+  background-color: #121b20;
+  font-family: "Rubik", sans-serif;
+
+  font-size: calc(var(--index) * 1);
+  color: #fff;
+  line-height: 1.4;
+}
+
+a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 10px 20px;
+  max-width: 1360px;
+}
+
+.container--sm {
+  max-width: 1140px;
+}
+
+.header__desc {
+  text-shadow: 0 0 3px #c1dff3;
+  font-size: calc(var(--index) * 0.8);
+  text-align: center;
+}
+
+h1 {
+  text-shadow: 0 0 5px #c1dff3;
+  font-size: calc(var(--index) * 3);
+  letter-spacing: calc(var(--index) * -0.1);
+  text-align: center;
+}
+
+h5 {
+  font-size: calc(var(--index) * 1);
+  font-weight: 400;
+  text-align: center;
+}
+
+.main {
+  margin-top: calc(var(--index) * 1.5);
+}
+
+.playing-now__title {
+  margin-bottom: calc(var(--index) * 1.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.playing-now__title img{
+    width: 35px;
+    height: 25px;
+    object-fit: cover;
+}
+
+.playing-now__game {
+  border: 2px solid #ffffff3a;
+  box-shadow: 0 0 10px #c1dff325;
+  border-radius: 8px;
+  margin-bottom: calc(var(--index) * 1);
+}
+
+/*Percentage*/
+
+.percentage-wrapper{
+  background-color: #ffffffe7;
+  box-shadow: 0 0 10px #c1dff338;
+  border-radius: 50%;
+  padding: 80px 20px;
+  font-size: calc(var(--index) * 1.1);
+  letter-spacing: calc(var(--index) * 0.1);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #121b20;
+  
+}
+
+.percentage__winner{
+  font-size: calc(var(--index) * 1.9);
+  font-weight: 500;
+}
+
+/*Teams*/
+
+.playing-now__teams {
+  padding: calc(var(--index) * 1.2) calc(var(--index) * 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.team {
+  text-align: center;
+}
+
+.team__title {
+  font-size: calc(var(--index) * 1);
+  text-shadow: 0 0 3px #83e6ff;
+}
+
+.team__list {
+  margin-top: calc(var(--index) * 1.5);
+  list-style: none;
+  font-size: calc(var(--index) * 0.8);
+}
+
+.team__list__item {
+  margin-bottom: calc(var(--index));
+}
+
+/*Player*/
+
+.player {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--index) * 0.5);
+}
+
+.reflect{
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.player__hero-icon {
+  width: calc(var(--index) * 2);
+  height: calc(var(--index) * 2);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.particles{
+    position: absolute;
+    inset: -5vw;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+}
+
+
+/*Footer*/
+
+.footer{
+  background-color: #162329;
+  font-size: calc(var(--index) * 0.7);
+  padding: 20px;
+}
+
+.footer__content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__about{
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  text-align-last: left;
+  gap: 20px;
+}
+
+.footer__about h5{
+  font-weight: 700;
+}
+
+.footer__contact{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact__items{
+  display: flex;
+  gap: 20px;
+}
+
+.contact__item{
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 15px;
+}
+
+.contact__item:hover .contact__icon{
+  transform: scale(1.2);
+}
+
+
+.contact__icon{
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
